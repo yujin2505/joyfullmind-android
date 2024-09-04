@@ -1,0 +1,107 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundcolor"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnCalendar"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:background="@drawable/round"
+            android:contentDescription="calendar"
+            android:text=" "
+            app:icon="@drawable/calender" />
+
+        <TextView
+            android:id="@+id/txtDateRange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/button_background2"
+            android:backgroundTint="#F8EBE5"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="날짜 또는 기간을 선택하세요"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ExpandableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/roundbackground"
+        android:backgroundTint="#DDFAEAD2"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="20dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/charm"
+            android:gravity="center"
+            android:text="✏️    Diary    📒"
+            android:textColor="#E2AC77"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+            android:id="@+id/cvCalendar"
+            android:layout_width="match_parent"
+            android:layout_height="330dp"
+            android:background="@drawable/roundbackground"
+            android:backgroundTint="#DDFFFFFF"
+            android:orientation="horizontal"
+            app:mcv_selectionColor="#f79256"
+            app:mcv_selectionMode="range" />
+
+    </LinearLayout>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:padding="8dp" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_margin="16dp"
+            android:clickable="true"
+            android:contentDescription="add"
+            app:backgroundTint="@color/button_text_color"
+            app:srcCompat="@drawable/pencil" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundcolor"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/imgTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        app:srcCompat="@drawable/sentiment_analysis_report" />
+
+    <ImageView
+        android:id="@+id/imgment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        app:srcCompat="@drawable/ment" />
+
+    <LinearLayout
+        android:id="@+id/ExpandableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/roundbackground"
+        android:backgroundTint="#DDFAEAD2"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="20dp">
+
+        <TextView
+            android:id="@+id/txtDateRange"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="날짜 또는 기간을 선택하세요"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+            android:id="@+id/cvCalendar"
+            android:layout_width="match_parent"
+            android:layout_height="330dp"
+            android:background="@drawable/roundbackground"
+            android:backgroundTint="#DDFFFFFF"
+            android:orientation="horizontal"
+            app:mcv_selectionColor="#f79256"
+            app:mcv_selectionMode="range" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom|center"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/detaliedsentiment" />
+
+</LinearLayout>

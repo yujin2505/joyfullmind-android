@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundcolor"
+    tools:context=".ProfileActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profileImage"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="115dp"
+        android:layout_marginEnd="160dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/defaultprofileimg"
+        app:civ_border_overlay="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/defaultprofileimg" />
+
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="363dp"
+        android:layout_height="488dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="7dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/roundbackground" />
+
+    <ImageView
+        android:id="@+id/ImageView22"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="95dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/profilecircle" />
+
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/profilechange" />
+
+    <ImageView
+        android:id="@+id/imgChangeNickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="276dp"
+        android:layout_marginEnd="68dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pencil" />
+
+    <EditText
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="100dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Nickname"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ImageView22" />
+
+    <TextView
+        android:id="@+id/newPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="60dp"
+        android:text="이메일"
+        android:textColor="#474646"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitle" />
+
+    <TextView
+        android:id="@+id/txtChangePassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="320dp"
+        android:layout_marginEnd="70dp"
+        android:text="비밀번호 변경"
+        android:textColor="#474646"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgChangeNickname" />
+
+    <TextView
+        android:id="@+id/txtLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="320dp"
+        android:layout_marginEnd="200dp"
+        android:text="로그아웃"
+        android:textColor="#474646"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@id/txtChangePassword"
+        app:layout_constraintTop_toBottomOf="@+id/imgChangeNickname" />
+
+    <TextView
+        android:id="@+id/textViewgenderLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="40dp"
+        android:text="성별"
+        android:textColor="#474646"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newPassword" />
+
+    <TextView
+        android:id="@+id/textViewageLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="40dp"
+        android:text="나이"
+        android:textColor="#474646"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewgenderLabel" />
+
+    <TextView
+        android:id="@+id/textViewage"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:textColor="#474646"
+        android:textSize="17sp"
+        app:layout_constraintStart_toEndOf="@+id/textViewageLabel"
+        app:layout_constraintTop_toTopOf="@+id/textViewageLabel" />
+
+    <TextView
+        android:id="@+id/textViewgender"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:textColor="#474646"
+        android:textSize="17sp"
+        app:layout_constraintStart_toEndOf="@+id/textViewgenderLabel"
+        app:layout_constraintTop_toTopOf="@+id/textViewgenderLabel" />
+
+    <TextView
+        android:id="@+id/textViewemail"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:textColor="#474646"
+        android:textSize="17sp"
+        app:layout_constraintStart_toEndOf="@+id/newPassword"
+        app:layout_constraintTop_toTopOf="@+id/newPassword" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

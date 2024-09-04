@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">JoyfulMind</string>
+    <string name="login">Log In</string>
+    <string name="signup">Sign up</string>
+    <string name="google_login">Google</string>
+    <string name="email_hint">이메일</string>
+    <string name="password_hint">비밀번호</string>
+    <string name="naver_client_id">YUB2z6Fr5O28qkrrV8W6</string>
+    <string name="delete">Delete</string>
+    <string name="naver_client_secret">NniILutY2c</string>
+    <string name="naver_client_name">joyfulmind</string>
+    <string name="greeting_message">"user name"님\n오늘 하루는 어땠나요?</string>
+    <string name="chatting_with_joy">Chatting with joy</string>
+    <string name="taking_a_walk">Taking a walk</string>
+    <string name="writing_a_diary">Writing a Diary</string>
+    <string name="character_image">Character Image</string>
+    <string name="imgTitle_description">Sentiment Analysis Report</string>
+    <string name="imgTitle2_description">Song</string>
+    <string name="pieChart_description">Pie chart displaying the top 3 emotions</string>
+    <string name="barChart_description">Bar chart displaying all emotions</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

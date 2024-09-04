@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="50dp"
+    android:layout_marginRight="10dp"
+    android:gravity="right"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtMyName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="8dp"
+            android:text="발신자 이름"
+            android:textColor="@color/black" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:background="@drawable/mychatting"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtMyMessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ellipsize="none"
+                    android:gravity="left"
+                    android:inputType="textMultiLine"
+                    android:maxLines="5"
+                    android:singleLine="false"
+                    android:text="메시지 내용"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imgMessage"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="8dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/chat"
+            android:scaleType="centerCrop"
+            android:visibility="gone"
+            app:srcCompat="@drawable/common_google_signin_btn_icon_disabled" />
+
+        <TextView
+            android:id="@+id/txtMyTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="4dp"
+            android:text="메시지 시간"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ImageView22"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="7dp"
+        android:src="@drawable/defaultprofileimg"
+        app:civ_border_color="#FFFFFF"
+        app:civ_border_width="2dp" />
+
+</LinearLayout>

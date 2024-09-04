@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundcolor"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="32dp">
+
+        <ImageView
+            android:id="@+id/imageView19"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30sp"
+            android:layout_marginBottom="40sp"
+            app:srcCompat="@drawable/joyfulmind2" />
+
+        <EditText
+            android:id="@+id/editEmail"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/round"
+            android:backgroundTint="#FFFFFF"
+            android:drawableStart="@drawable/ic_email"
+            android:drawablePadding="10dp"
+            android:hint="email"
+            android:inputType="textEmailAddress"
+            android:padding="16dp"
+            android:textColor="#000"
+            android:textColorHint="#888" />
+
+        <EditText
+            android:id="@+id/editPassword"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/round"
+            android:backgroundTint="#FFFFFF"
+            android:drawableStart="@drawable/ic_lock"
+            android:drawablePadding="10dp"
+            android:hint="password"
+            android:inputType="textPassword"
+            android:padding="16dp"
+            android:textColor="#000"
+            android:textColorHint="#888" />
+
+        <ImageView
+            android:id="@+id/ImgLogin"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"
+            app:srcCompat="@drawable/login" />
+
+        <com.navercorp.nid.oauth.view.NidOAuthLoginButton
+            android:id="@+id/btn_login"
+            android:layout_width="330dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="40dp"
+            android:contentDescription="naverlogin"
+            android:foreground="@drawable/naver"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/txtRegister"
+            android:layout_width="330dp"
+            android:layout_height="80dp"
+            android:background="@drawable/backgroundcolor"
+            android:backgroundTint="#00FFFFFF"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="Don't have an account? sign up"
+            android:textColor="#EFD893"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</RelativeLayout>
